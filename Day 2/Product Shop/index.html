@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Product Shop</title>
+  </head>
+  <body>
+    <div  id="loading" style="display: none;" >Loading..</div>
+    <div id="errMsg" style="display: none;" >There is an error</div>
+    <div id="empty" style="display: none;" >NO Product in the cart</div>
+
+    <section class="CategoriesContainer flex-column">
+      <h1>Category</h1>
+      <div class="inputCategories flex-column">
+        <div>
+          <input type="checkbox" name="all" value="all" />
+          <label for="all"> All</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="men's clothing" value="men's clothing" />
+          <label for="men's clothing">Men's Clothing</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="jewelery" value="jewelery" />
+          <label for="jewelery">Jewelery</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="electronics" value="electronics" />
+          <label for="Electronics">Electronics</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="women's clothing" value="women's clothing" />
+          <label for="women's clothing">women's clothing</label>
+        </div>
+      </div>
+    </div>
+      <hr />
+      <select>
+        <option>Select</option>
+        <option value="High to Low">High to Low</option>
+        <option value="Low to Highs">Low to High</option>
+      </select>
+    </section>
+
+    <Section class="Card-Section">
+    </Section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

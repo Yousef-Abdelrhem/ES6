@@ -1,14 +1,9 @@
 class Shape {
-  constructor(width, height) {
+  constructor(width) {
     this.width = width;
-    this.height = height;
   }
-  CalcArea(width, height) {
-    return this.width * this.height;
-  }
-  CalcPerimeter(width, height) {
-    return 2 * (this.width + this.height);
-  }
+  CalcArea() {}
+  CalcPerimeter() {}
 
   toString() {
     return (
@@ -22,11 +17,18 @@ class Shape {
 
 class Rectangle extends Shape {
   constructor(width, height) {
-    super(width, height);
+    super(width);
+    this.height = height;
+  }
+  CalcArea() {
+    return this.width * this.height;
+  }
+  CalcPerimeter() {
+    return 2 * (this.width + this.height);
   }
 }
 
-class Square extends Shape {
+class Square extends Rectangle {
   constructor(width) {
     super(width, width);
   }
@@ -34,14 +36,13 @@ class Square extends Shape {
 
 class Circle extends Shape {
   constructor(radius) {
-    super();
-    this.radius = radius;
+    super(radius);
   }
   CalcArea() {
-    return Math.PI * Math.pow(this.radius, 2);
+    return Math.PI * Math.pow(this.width, 2);
   }
   CalcPerimeter() {
-    return 2 * Math.PI * this.radius;
+    return 2 * Math.PI * this.width;
   }
 }
 

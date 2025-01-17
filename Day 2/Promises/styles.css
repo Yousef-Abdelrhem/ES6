@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding : 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.usersContainer{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    padding: 1.5rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 148, 240);
+    width: 130px;
+    height: 100px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    
+}
+
+.titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 100px;
+    background-color: rgb(213, 213, 213);
+    box-shadow: 1px 1px 10px;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
